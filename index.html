@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MBITS WiFi Login Page</title>
+            <meta
+            name="description"
+            content="MBITS WiFi login page"
+             />
+            <meta charset="utf-8" />
+            <meta name="robots" content="index,flow" />
+
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet" href="style.css">
+
+             <link
+                 href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+                rel="stylesheet"
+             />
+        <link
+                rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+                />
+       
+    </head>
+    <body>
+        <h2 style="text-align:center;">WELCOME TO MBITS WiFi!</h2>
+        <form class="box" action="login.html" method="post" >
+            
+            <img src="./assets/images/logo.jpg" alt="MBITS" width="90" height="80">
+            <img src="./assets/images/moon.png" id="icon">
+            <h1>Login</h1>
+            <p>Please enter your given WiFi user ID & password</p>
+            
+            <input type="text" name="" placeholder="User name" required>
+            <input type="password" name="" placeholder="Password" required>
+            <input type="submit" name="" placeholder="sign in">
+            <p>Technical support MBITS system administratot WhatsApp only <br><b><i>+91 95399 65780</br></i></b>For resetting password, please contact through class tutors</p>
+        </form>
+        <script>
+            var icon = document.getElementById("icon");
+            icon.onclick = function(){
+                document.body.classList.toggle("dark-theme");
+                if(document.body.classList.contains("dark-theme")){
+                    icon.src = "./assets/images/sun.png";
+                }else{
+                    icon.src = "./assets/images/moon.png"
+                }
+
+            }
+
+        </script>
+    </body>
+</html>
+        
+        
